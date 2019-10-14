@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Forms with Javascript</title>
+<link href="styles/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="contact" id="contact">
+		<h2 onClick="toggleClass()">Kom i kontakt med os <span>+</span></h2>
+		<form>
+			<div class="row">
+				<div class="col-2">
+					<label>Fornavn</label>
+					<input id="fornavn" type="text" name="" class="text" placeholder="First Name" oninput="check()">
+				</div>
+				<div class="col-2">
+					<label>Efternavn</label>
+					<input id="efternavn" type="text" name="" class="text" placeholder="Last Name" oninput="check()">
+				</div>
+				<div class="col-2">
+					<label>Email Adr</label>
+					<input id="email" type="text" name="" class="text" placeholder="lorem@ipsum.com" oninput="check()">
+				</div>
+				<div class="col-2">
+					<label>Telefon</label>
+					<input id="telefon" type="text" name="" class="text" placeholder="+45 123 456 78" oninput="check()">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-1">
+					<label>Skriv din besked</label>
+					<textarea id="textsted" placeholder="Skriv din besked her" oninput="check()"></textarea>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-1">
+					<button id="submit" class="submit" type="submit" name="" value="Send besked">Send Besked</button>
+				</div>
+			</div>
+		</form>
+	</div>
+	
+	<script src="js/js.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="https://kit.fontawesome.com/ae8ed83fcd.js"></script>
+<title>Login forms JS</title>
+<link href="styles/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+		
+	<div class="wrapper">
+		<div class="box box1">
+			<a onClick="changecolor ('red')" id="red" class="box red">#e74c3c</a>
+			<a onClick="changecolor ('green')" id="green" class="box green">#2ecc71</a>
+			<a onClick="changecolor ('yellow')" id="yellow" class="box yellow">#f1c40f</a>
+			<button onClick="changecolor ('blue')" id="blue" class="box blue">#00ffff</button>
+		</div>
+		<div id="box2" class="box box2">
+			<h2>Infomation</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum commodi aspernatur autem beatae labore quae itaque vel laboriosam expedita sint, impedit est corporis illum, nam, dicta numquam similique provident magni.
+			</p>
+			<p>
+				<span>Lorem ipsum:</span> dolor sit amet, consectetur adipisicing elit. Nostrum eos assumenda quaerat porro, quod voluptatibus sint similique, modi quis iste.
+			</p>
+			
+			<button class="button" type="button">Have an account</button>
+		
+		
+		</div>
+		<div class="box box3">
+			<h2 class="h2">REGISTER FORM</h2>
+			<form>
+				
+			  <input id="fname" class="fname" type="text" name="firstname" placeholder="Firstname">
+			  <input class="lname" type="text" name="lastname" placeholder="Lastname">
+			  <br>
+				
+			  <input id="lname" class="email" type="text" name="email" placeholder="Your Email">
+				
+			<div class="pass">  
+				<p>Password</p>
+			  	<input id="pass5" class="pass5" type="password" name="password" placeholder="Password">
+				<!--<i type="button" onClick="visPass" id="eye" class="fas fa-eye"></i>-->
+				<button id="visknap" type="button" onClick="visPass()"><i class="fas fa-eye"></i></button>
+				
+				
+			</div>
+				
+			<div class="pass1"> 
+				<p>Confirm Password</p>
+			  	<input id="pass5s" class="pass5" type="password" name="confirmpass" placeholder="Confirm Password">
+			</div>
+			  <br>
+				
+			  <input id="checkbox" type="checkbox" name="checkbox" required >I agree to the <a href="#">Terms and Conditions</a>
+				
+			<button class="submit" name="submits">Register</button>
+			</form>
+      
+		</div>
+		
+	
+	</div>
+	
+	
+	<script src="js/js.js"></script>
+</body>
+</html>

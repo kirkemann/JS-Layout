@@ -1,0 +1,106 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body
+{
+	margin: 0;
+	padding: 0;
+	background: #444;
+	overflow: hidden;
+}
+.main
+{
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	color: #fff;
+	font-family: cursive;
+	background: #444;
+	margin: 0;
+}
+
+.main h1
+{
+	position: relative;
+	height: auto;
+	width: 100%;
+	text-shadow: 0px 0px 12px rgba(255, 255, 255, 0.35);
+	font-weight: 700;
+	font-size: 48px;
+	text-align: center;
+}
+.main p
+{
+	position: relative;
+	height: auto;
+	width: 100%;
+	text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.25);
+	font-weight: 500;
+	font-size: 22px;
+	text-align: center;
+}
+
+.main .galleri-boks
+{
+	position: relative;
+	height: 500px;
+	width: 70%;
+	margin: 5% auto;
+	overflow: hidden;
+}
+
+.main .galleri-boks .img-prewiew-box
+{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.main .galleri-boks .img-prewiew-box img
+{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.main .galleri-boks .img-thumbannils
+{
+	position: absolute;
+	height: calc(100% - 350px);
+	width: 100%;
+	display: flex;
+	transition: 0.5s ease-in-out;
+	z-index: 1;
+	bottom: -100%;
+	overflow: hidden;
+}
+
+.main .galleri-boks:hover .img-thumbannils
+{
+	
+	bottom: 0;
+}
+
+.main .galleri-boks .img-thumbannils .img-thumbnail
+{
+	position: relative;
+	height: 100%;
+	width: calc(100% / 6);
+	overflow: hidden;
+	cursor: pointer;
+
+}
+
+.main .galleri-boks .img-thumbannils .img-thumbnail img
+{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+
+}
+
+.main .galleri-boks .img-thumbannils .img-thumbnail:hover img
+{
+	opacity: 0.85;
+}
